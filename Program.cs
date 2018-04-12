@@ -29,7 +29,7 @@ namespace product_project_practic
                 if (key == "1")
                 {
                     products.Clear();
-                    StreamReader fs = new StreamReader(@"..\\..\\text.txt");
+                    StreamReader fs = new StreamReader("..\\..\\text.txt");
                     while (!fs.EndOfStream)
                     {
                         string temp1 = fs.ReadLine();

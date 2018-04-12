@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Data.SqlClient;
 
 namespace product_project_practic
 {
@@ -11,6 +12,7 @@ namespace product_project_practic
     {
         static void Main(string[] args)
         {
+            SqlConnetcion sql = new SqlConnection("path");
             List<Product> products = new List<Product>();
             while (true)
             {
